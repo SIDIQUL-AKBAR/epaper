@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The MCO Times — Student & Community E-Paper</title>
+
+  <meta
+    name="description"
+    content="The MCO Times — Real Stories. Young Voices. Bigger Dreams."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="topbar">
+  THE MCO TIMES
+  <span>•</span>
+  STUDENT
+  <span>•</span>
+  COMMUNITY
+  <span>•</span>
+  TECHNOLOGY
+  <span>•</span>
+  EDUCATION
+</div>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="header-main">
+
+    <div>
+
+      <div class="masthead">
+        THE MCO TIMES
+      </div>
+
+      <div class="tagline">
+        A STUDENT & COMMUNITY E-PAPER
+      </div>
+
+    </div>
+
+    <div class="publisher">
+
+      <small>PUBLISHED BY</small>
+
+      <strong>
+        MASTER CODING<br>
+        ORGANISATION
+      </strong>
+
+    </div>
+
+  </div>
+
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="#home">HOME</a>
+    <a href="#latest">LATEST</a>
+    <a href="#archive">ARCHIVE</a>
+    <a href="#categories">CATEGORIES</a>
+    <a href="#about">ABOUT</a>
+
+  </nav>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main id="home">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      REAL STORIES • YOUNG VOICES • BIGGER DREAMS
+    </div>
+
+    <h1>
+      THE MCO<br>
+      <span>TIMES</span>
+    </h1>
+
+    <p>
+      A student and community e-paper covering school news,
+      achievements, technology, education, science and
+      stories that matter.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#latest" class="button dark">
+        READ LATEST ISSUE
+      </a>
+
+      <a href="#archive" class="button">
+        BROWSE ARCHIVE
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Newspaper mockup -->
+
+  <div class="newspaper">
+
+    <div class="paper">
+
+      <div class="paper-title">
+        THE MCO TIMES
+      </div>
+
+      <div class="paper-line"></div>
+
+      <div class="paper-date">
+        STUDENT • COMMUNITY • TECHNOLOGY • EDUCATION
+      </div>
+
+      <h2>
+        A NEW<br>
+        CHAPTER<br>
+        BEGINS
+      </h2>
+
+      <div class="fake-photo"></div>
+
+      <div class="paper-small">
+        REAL STORIES.<br>
+        YOUNG VOICES.<br>
+        BIGGER DREAMS.
+      </div>
+
+      <div class="coming">
+        LAUNCHING SOON
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LATEST ISSUE
+========================= -->
+
+<section id="latest" class="section">
+
+  <div class="section-header">
+
+    <div>
+
+      <div class="eyebrow">
+        DIGITAL EDITION
+      </div>
+
+      <h2>
+        Latest Issue
+      </h2>
+
+    </div>
+
+    <div id="issueCount"></div>
+
+  </div>
+
+
+  <div id="latestIssue"></div>
+
+</section>
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section id="categories" class="section categories">
+
+  <div class="eyebrow">
+    WHAT WE COVER
+  </div>
+
+  <h2>
+    Our Sections
+  </h2>
+
+
+  <div class="category-grid">
+
+    <div class="category">
+      <div class="icon">▤</div>
+      <h3>SCHOOL NEWS</h3>
+      <p>
+        Updates from schools and student communities.
+      </p>
+    </div>
+
+
+    <div class="category">
+      <div class="icon">★</div>
+      <h3>ACHIEVEMENTS</h3>
+      <p>
+        Student achievements, competitions and recognitions.
+      </p>
+    </div>
+
+
+    <div class="category">
+      <div class="icon">⌘</div>
+      <h3>TECHNOLOGY</h3>
+      <p>
+        AI, coding, gadgets and digital innovation.
+      </p>
+    </div>
+
+
+    <div class="category">
+      <div class="icon">▱</div>
+      <h3>EDUCATION</h3>
+      <p>
+        Learning resources, ideas and useful guidance.
+      </p>
+    </div>
+
+
+    <div class="category">
+      <div class="icon">✦</div>
+      <h3>SCIENCE</h3>
+      <p>
+        Discoveries, experiments and interesting facts.
+      </p>
+    </div>
+
+
+    <div class="category">
+      <div class="icon">◎</div>
+      <h3>COMMUNITY</h3>
+      <p>
+        Events, initiatives and stories from the community.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ARCHIVE
+========================= -->
+
+<section id="archive" class="section archive">
+
+  <div class="section-header">
+
+    <div>
+
+      <div class="eyebrow">
+        EVERY EDITION
+      </div>
+
+      <h2>
+        E-Paper Archive
+      </h2>
+
+    </div>
+
+
+    <select id="sort">
+
+      <option value="newest">
+        Newest First
+      </option>
+
+      <option value="oldest">
+        Oldest First
+      </option>
+
+    </select>
+
+  </div>
+
+
+  <div id="archiveList"></div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="about section">
+
+  <div>
+
+    <div class="eyebrow">
+      ABOUT THE PUBLICATION
+    </div>
+
+    <h2>
+      The MCO Times
+    </h2>
+
+  </div>
+
+
+  <p>
+
+    The MCO Times is a student and community-focused
+    digital newspaper published by Master Coding Organisation.
+
+    The publication covers school news, student achievements,
+    technology, education, science, community events and
+    useful stories.
+
+  </p>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div>
+
+    <strong>
+      THE MCO TIMES
+    </strong>
+
+    <p>
+      Real Stories. Young Voices. Bigger Dreams.
+    </p>
+
+  </div>
+
+
+  <div>
+    Published by<br>
+    <strong>MASTER CODING ORGANISATION</strong>
+  </div>
+
+
+  <div>
+    © 2026 The MCO Times
+  </div>
+
+</footer>
+
+
+<!-- =========================
+     PDF READER
+========================= -->
+
+<div id="reader" class="reader">
+
+  <div class="reader-overlay"></div>
+
+
+  <div class="reader-window">
+
+
+    <!-- Reader toolbar -->
+
+    <div class="reader-header">
+
+      <div>
+
+        <small>
+          THE MCO TIMES • DIGITAL EDITION
+        </small>
+
+        <h3 id="readerTitle">
+          Issue
+        </h3>
+
+        <span id="readerDate"></span>
+
+      </div>
+
+
+      <div class="reader-actions">
+
+        <a
+          id="downloadPDF"
+          target="_blank"
+          class="reader-button"
+        >
+          DOWNLOAD PDF
+        </a>
+
+        <button
+          id="closeReader"
+          class="reader-button close"
+        >
+          CLOSE ×
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Book -->
+
+    <div class="book-area">
+
+      <div class="book">
+
+        <div class="book-spine"></div>
+
+        <div class="book-page">
+
+          <iframe
+            id="pdfViewer"
+            title="The MCO Times PDF Reader"
+          ></iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="reader-footer">
+
+      Use the PDF controls to navigate pages, zoom and
+      enter fullscreen.
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
