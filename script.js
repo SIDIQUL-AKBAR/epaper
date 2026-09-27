@@ -7,46 +7,13 @@
 
 
 const issues = [
-
-  /*
-  ================================================
-  ISSUE 01
-  ================================================
-  */
-
   {
     title: "Issue 01 — Launch Edition",
-
     date: "2026-09-25",
-
     displayDate: "25 September 2026",
-
-    description:
-      "The launch edition of The MCO Times.",
-
-    /*
-      Paste your Google Drive sharing link here.
-
-      Example:
-
-      https://drive.google.com/file/d/123456789/view?usp=sharing
-
-      Make sure:
-      Share → Anyone with the link → Viewer
-    */
-
-    pdf:
-      "https://drive.google.com/file/d/1TkkXURY7LTVxtxUwoARztn_MntGu0Inz/view?usp=drive_link",
-
-    /*
-      Put your newspaper cover inside /assets/
-
-      Example:
-      assets/issue-01.jpg
-    */
-
-    cover:
-      "assets/issue-01.jpg"
+    description: "The launch edition of The MCO Times.",
+    pdf: "https://drive.google.com/file/d/1TkkXURY7LTVxtxUwoARztn_MntGu0Inz/view?usp=sharing",
+    cover: "assets/issue-01.jpg"
   },
 
 
@@ -87,55 +54,24 @@ const issues = [
 
 
 function getDriveID(url) {
-
   if (!url) return null;
 
-  const match =
-    url.match(/\/file\/d\/([^/]+)/);
-
-  if (match) {
-
-    return match[1];
-
-  }
-
-  return null;
-
+  const match = url.match(/\/file\/d\/([^/]+)/);
+  return match ? match[1] : null;
 }
-
-
 
 function getViewerURL(url) {
+  const id = getDriveID(url);
+  if (!id) return url;
 
-  const id =
-    getDriveID(url);
-
-  if (id) {
-
-    return:
-      `https://drive.google.com/file/d/${id}/preview`;
-
-  }
-
-  return url;
-
+  return `https://drive.google.com/file/d/${id}/preview`;
 }
 
-
-
 function getDownloadURL(url) {
+  const id = getDriveID(url);
+  if (!id) return url;
 
-  const id =
-    getDriveID(url);
-
-  if (id) {
-
-    return:
-      `https://drive.google.com/uc?export=download&id=${id}`;
-
-  }
-
-  return url;
+  return `https://drive.google.com/uc?export=download&id=${id}`;
 
 }
 
