@@ -13,7 +13,7 @@ const issues = [
     displayDate: "25 September 2026",
     description: "The launch edition of The MCO Times.",
     pdf: "https://drive.google.com/file/d/1TkkXURY7LTVxtxUwoARztn_MntGu0Inz/view?usp=sharing",
-    cover: "assets/issue-01.jpg"
+    cover: "assets/Issue-01.jpg"
   },
 
 
