@@ -36,7 +36,7 @@ const issues = [
     */
 
     pdf:
-      "https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing",
+      "https://drive.google.com/file/d/1TkkXURY7LTVxtxUwoARztn_MntGu0Inz/view?usp=drive_link",
 
     /*
       Put your newspaper cover inside /assets/
