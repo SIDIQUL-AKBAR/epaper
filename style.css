@@ -1,0 +1,1492 @@
+/* =========================================
+   THE MCO TIMES
+   MAIN STYLESHEET
+========================================= */
+
+
+/* =========================================
+   OPTIONAL AHSING FONT
+========================================= */
+
+/*
+
+If you have the Ahsing font file:
+
+@font-face {
+  font-family: "Ahsing";
+  src: url("assets/Ahsing.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*/
+
+:root {
+
+  --paper: #f7f6f1;
+
+  --paper-dark: #eceae2;
+
+  --black: #101010;
+
+  --navy: #101936;
+
+  --blue: #3157d6;
+
+  --gray: #666;
+
+  --line: #d4d3cc;
+
+  --white: #ffffff;
+
+  --max: 1250px;
+
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  margin: 0;
+
+  background: #deddd6;
+
+  color: var(--black);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.topbar {
+
+  background: var(--navy);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 9px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+.topbar span {
+
+  margin: 0 7px;
+
+  color: #8092df;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+  max-width: var(--max);
+
+  margin: auto;
+
+  background: var(--paper);
+
+}
+
+
+.header-main {
+
+  padding:
+    28px
+    38px
+    20px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  border-bottom: 1px solid var(--black);
+
+}
+
+
+.masthead {
+
+  font-family:
+    "Ahsing",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(48px, 8vw, 90px);
+
+  font-weight: 900;
+
+  letter-spacing: -5px;
+
+  line-height: .85;
+
+}
+
+
+/* =========================================
+   TAGLINE
+========================================= */
+
+.tagline {
+
+  margin-top: 15px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: var(--navy);
+
+}
+
+
+/* =========================================
+   PUBLISHER
+========================================= */
+
+.publisher {
+
+  border-left:
+    2px solid var(--blue);
+
+  padding-left: 16px;
+
+  color: var(--navy);
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  line-height: 1.6;
+
+}
+
+.publisher small {
+
+  display: block;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+
+  display: flex;
+
+  justify-content: center;
+
+  border-bottom:
+    3px double var(--black);
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 50;
+
+  background:
+    rgba(247,246,241,.96);
+
+  backdrop-filter: blur(10px);
+
+}
+
+nav a {
+
+  padding:
+    13px
+    18px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+nav a:hover {
+
+  background: var(--navy);
+
+  color: white;
+
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+
+  max-width: var(--max);
+
+  margin: auto;
+
+  background: var(--paper);
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+  min-height: 600px;
+
+  padding:
+    70px
+    55px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    .8fr;
+
+  gap: 60px;
+
+  align-items: center;
+
+  border-bottom: 1px solid var(--line);
+
+}
+
+
+.eyebrow {
+
+  color: var(--blue);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+
+}
+
+
+.hero h1 {
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(65px, 9vw, 115px);
+
+  line-height: .78;
+
+  letter-spacing: -7px;
+
+  margin: 0;
+
+}
+
+.hero h1 span {
+
+  font-style: italic;
+
+}
+
+
+.hero p {
+
+  max-width: 600px;
+
+  color: var(--gray);
+
+  line-height: 1.8;
+
+  font-size: 16px;
+
+  margin:
+    30px
+    0;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+}
+
+
+.button {
+
+  display: inline-block;
+
+  border:
+    1px solid var(--black);
+
+  padding:
+    13px
+    18px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+
+.button.dark {
+
+  background: var(--navy);
+
+  color: white;
+
+}
+
+
+.button:hover {
+
+  transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   NEWSPAPER MOCKUP
+========================================= */
+
+.newspaper {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 450px;
+
+}
+
+
+.paper {
+
+  width: 310px;
+
+  height: 410px;
+
+  background:
+    #f1f0e9;
+
+  border:
+    1px solid #c7c5bc;
+
+  padding: 25px;
+
+  box-shadow:
+    20px 25px 40px
+    rgba(0,0,0,.22);
+
+  transform:
+    rotate(-5deg);
+
+}
+
+
+.paper-title {
+
+  font-family:
+    "Ahsing",
+    Georgia,
+    serif;
+
+  font-size: 32px;
+
+  text-align: center;
+
+}
+
+
+.paper-line {
+
+  height: 2px;
+
+  background: var(--black);
+
+  margin:
+    12px
+    0;
+
+}
+
+
+.paper-date {
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+
+.paper h2 {
+
+  font-family: Georgia, serif;
+
+  font-size: 39px;
+
+  line-height: .85;
+
+  margin:
+    30px
+    0
+    12px;
+
+}
+
+
+.fake-photo {
+
+  height: 105px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #bbb9b0,
+      #555
+    );
+
+}
+
+
+.paper-small {
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  margin-top: 12px;
+
+  line-height: 1.4;
+
+}
+
+
+.coming {
+
+  margin-top: 10px;
+
+  padding: 7px;
+
+  background: var(--navy);
+
+  color: white;
+
+  text-align: center;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
+  padding:
+    60px
+    45px;
+
+}
+
+
+.section-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: end;
+
+  border-bottom:
+    3px double var(--black);
+
+  padding-bottom: 14px;
+
+  margin-bottom: 30px;
+
+}
+
+
+.section h2 {
+
+  margin: 0;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 45px;
+
+  letter-spacing: -2px;
+
+}
+
+
+#issueCount {
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  color: var(--gray);
+
+}
+
+
+/* =========================================
+   LATEST ISSUE
+========================================= */
+
+.latest-card {
+
+  display: grid;
+
+  grid-template-columns:
+    330px
+    1fr;
+
+  gap: 40px;
+
+  padding: 20px;
+
+  border:
+    1px solid var(--line);
+
+  background: white;
+
+}
+
+
+.cover {
+
+  height: 440px;
+
+  background:
+    var(--paper-dark);
+
+  overflow: hidden;
+
+}
+
+
+.cover img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+.cover-fallback {
+
+  padding: 30px;
+
+  height: 100%;
+
+  background: var(--paper);
+
+  border: 1px solid #bbb;
+
+}
+
+
+.cover-fallback-logo {
+
+  font-family:
+    "Ahsing",
+    Georgia,
+    serif;
+
+  font-size: 32px;
+
+}
+
+
+.cover-fallback h3 {
+
+  font-family: Georgia, serif;
+
+  font-size: 45px;
+
+  line-height: .85;
+
+  margin-top: 60px;
+
+}
+
+
+.latest-info {
+
+  padding: 30px 10px;
+
+}
+
+
+.latest-info h3 {
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 45px;
+
+  margin: 0 0 10px;
+
+}
+
+
+.date {
+
+  color: var(--blue);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+}
+
+
+.latest-info p {
+
+  color: var(--gray);
+
+  line-height: 1.8;
+
+  max-width: 600px;
+
+}
+
+
+/* =========================================
+   ISSUE BUTTON
+========================================= */
+
+.read {
+
+  display: inline-block;
+
+  border: none;
+
+  background: var(--navy);
+
+  color: white;
+
+  padding:
+    13px
+    18px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  margin-top: 15px;
+
+}
+
+
+.read:hover {
+
+  background: var(--blue);
+
+}
+
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.categories {
+
+  border-top:
+    1px solid var(--line);
+
+}
+
+
+.category-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 1px;
+
+  background: var(--line);
+
+}
+
+
+.category {
+
+  padding: 28px;
+
+  background: var(--paper);
+
+}
+
+
+.category:hover {
+
+  background: white;
+
+}
+
+
+.icon {
+
+  font-size: 30px;
+
+  color: var(--blue);
+
+}
+
+
+.category h3 {
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+}
+
+
+.category p {
+
+  color: var(--gray);
+
+  line-height: 1.6;
+
+  font-size: 13px;
+
+}
+
+
+/* =========================================
+   ARCHIVE
+========================================= */
+
+.archive select {
+
+  padding:
+    9px
+    12px;
+
+  border:
+    1px solid var(--line);
+
+  background: white;
+
+}
+
+
+.archive-item {
+
+  display: grid;
+
+  grid-template-columns:
+    150px
+    1fr
+    auto;
+
+  gap: 25px;
+
+  align-items: center;
+
+  padding:
+    20px
+    0;
+
+  border-bottom:
+    1px solid var(--line);
+
+}
+
+
+.archive-cover {
+
+  width: 150px;
+
+  height: 190px;
+
+  background: var(--paper-dark);
+
+  overflow: hidden;
+
+}
+
+
+.archive-cover img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+.archive-info h3 {
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 25px;
+
+  margin: 5px 0;
+
+}
+
+
+.archive-info p {
+
+  color: var(--gray);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+}
+
+
+.archive-date {
+
+  color: var(--blue);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+
+  display: grid;
+
+  grid-template-columns:
+    .7fr
+    1.3fr;
+
+  gap: 70px;
+
+  background:
+    var(--paper-dark);
+
+}
+
+
+.about p {
+
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: #4e4e4e;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+  max-width: var(--max);
+
+  margin: auto;
+
+  padding:
+    35px
+    45px;
+
+  background: var(--navy);
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+
+  font-size: 11px;
+
+}
+
+
+footer strong {
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 18px;
+
+}
+
+
+/* =========================================
+   PDF READER
+========================================= */
+
+.reader {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  display: none;
+
+}
+
+
+.reader.active {
+
+  display: block;
+
+}
+
+
+.reader-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    rgba(5,8,18,.88);
+
+  backdrop-filter:
+    blur(7px);
+
+}
+
+
+.reader-window {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 94vw;
+
+  height: 94vh;
+
+  margin: 3vh auto;
+
+  background:
+    #d8d7d1;
+
+  box-shadow:
+    0 30px 90px
+    rgba(0,0,0,.5);
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+/* =========================================
+   READER HEADER
+========================================= */
+
+.reader-header {
+
+  background:
+    var(--navy);
+
+  color: white;
+
+  padding:
+    15px
+    20px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 15px;
+
+}
+
+
+.reader-header small {
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #9ba8dd;
+
+}
+
+
+.reader-header h3 {
+
+  margin:
+    5px
+    0;
+
+  font-family:
+    Georgia,
+    serif;
+
+}
+
+
+.reader-header span {
+
+  font-size: 10px;
+
+  color: #c7cce0;
+
+}
+
+
+.reader-actions {
+
+  display: flex;
+
+  gap: 8px;
+
+}
+
+
+.reader-button {
+
+  border:
+    1px solid
+    rgba(255,255,255,.4);
+
+  color: white;
+
+  background: transparent;
+
+  padding:
+    10px
+    13px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+}
+
+
+.reader-button:hover {
+
+  background: white;
+
+  color: var(--navy);
+
+}
+
+
+.reader-button.close {
+
+  background: var(--blue);
+
+  border-color:
+    var(--blue);
+
+}
+
+
+/* =========================================
+   BOOK AREA
+========================================= */
+
+.book-area {
+
+  flex: 1;
+
+  min-height: 0;
+
+  padding: 25px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle,
+      #efeee8,
+      #c9c8c1
+    );
+
+}
+
+
+.book {
+
+  height: 100%;
+
+  width: min(1100px,95%);
+
+  display: flex;
+
+  filter:
+    drop-shadow(
+      0 20px 30px
+      rgba(0,0,0,.25)
+    );
+
+}
+
+
+.book-spine {
+
+  width: 14px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #99968e,
+      #f1eee5,
+      #99968e
+    );
+
+}
+
+
+.book-page {
+
+  flex: 1;
+
+  background: white;
+
+  border:
+    1px solid #aaa;
+
+  min-width: 0;
+
+  position: relative;
+
+}
+
+
+.book-page::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  bottom: 0;
+
+  width: 15px;
+
+  box-shadow:
+    inset 8px 0 15px
+    rgba(0,0,0,.1);
+
+  pointer-events: none;
+
+  z-index: 2;
+
+}
+
+
+#pdfViewer {
+
+  width: 100%;
+
+  height: 100%;
+
+  border: none;
+
+}
+
+
+/* =========================================
+   READER FOOTER
+========================================= */
+
+.reader-footer {
+
+  background:
+    var(--navy);
+
+  color:
+    #c9cee0;
+
+  text-align: center;
+
+  padding: 8px;
+
+  font-size: 9px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:850px) {
+
+  .header-main {
+
+    padding: 20px;
+
+  }
+
+  .publisher {
+
+    display: none;
+
+  }
+
+  .hero {
+
+    grid-template-columns: 1fr;
+
+    padding:
+      50px
+      25px;
+
+  }
+
+  .newspaper {
+
+    height: 390px;
+
+  }
+
+  .latest-card {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .category-grid {
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+  }
+
+  .about {
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+  }
+
+}
+
+
+@media(max-width:600px) {
+
+  .topbar {
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+  }
+
+  .masthead {
+
+    font-size: 52px;
+
+  }
+
+  nav {
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+  }
+
+  nav a {
+
+    white-space: nowrap;
+
+  }
+
+  .hero h1 {
+
+    font-size: 65px;
+
+  }
+
+  .section {
+
+    padding:
+      45px
+      20px;
+
+  }
+
+  .category-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .archive-item {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .archive-cover {
+
+    width: 100%;
+
+    height: 350px;
+
+  }
+
+  .reader-window {
+
+    width: 100vw;
+
+    height: 100vh;
+
+    margin: 0;
+
+  }
+
+  .reader-header {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+  .reader-actions {
+
+    width: 100%;
+
+  }
+
+  .book-area {
+
+    padding: 8px;
+
+  }
+
+}
